@@ -1,9 +1,6 @@
-const player = {
-    name: "nico",
-    points: 10,
-    fat : true,
-};
-
-console.log(player);
-player.points = player.points + 15;
-console.log(player.points);
+function sayHello(nameOfPerson,age){
+    console.log(nameOfPerson,age);
+}
+sayHello("nico", 21);
+sayHello("nifao", 23);
+sayHello("nsdo", null);

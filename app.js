@@ -1,4 +1,4 @@
-const player = {
+/*const player = {
     name:"nico",
     sayHello:   function(otherPersonsName){
         console.log("hello!" + otherPersonsName + " nico to meet you");
@@ -7,4 +7,9 @@ const player = {
 
 console.log(player.name)
 player.sayHello("lynn");
-player.sayHello("lyn123n");
+ */
+const a = 5;
+let isjaemanFat = true;
+
+//isjaemanFat = false;
+console.log(isjaemanFat);

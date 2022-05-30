@@ -8,8 +8,18 @@
 console.log(player.name)
 player.sayHello("lynn");
  */
-const a = 5;
-let isjaemanFat = true;
+/*
+let hello;
+console.log(hello);*/
 
-//isjaemanFat = false;
-console.log(isjaemanFat);
+/*
+const me = "sexy"
+const days = [1,2,false, true,null,undefined,me,"text"];
+console.log(days);*/
+
+const toBuy = ["감자","토마토","피자"];
+console.log(toBuy);
+toBuy[2] = "water";
+console.log(toBuy);
+toBuy.push("one");
+console.log(toBuy);

@@ -43,10 +43,26 @@ console.log(2+2);
 }
 alert("asasd");
 */
-function plus(po,sa){
-    console.log(po+sa);
+/*
+function minusFive(po){
+    console.log(po-5);
 
 }
-plus(12,23);
-plus(1.2,2312);
-plus(12,2.312);
+minusFive(2,3,4,5,6);*/
+const a ={
+ qwe:function(a,b){
+    alert(a**b);
+ },
+ qwe2:function(a,b){
+    alert(a*b);
+ },
+ qwe3:function(a,b){
+    alert(a/b);
+ },
+ qwe4:function(a,b){
+    alert(a+b);
+ },
+ 
+};
+console.log(a.qwe(2,4));
+

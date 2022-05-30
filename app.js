@@ -49,7 +49,8 @@ function minusFive(po){
 
 }
 minusFive(2,3,4,5,6);*/
-const a ={
+
+/*const a ={
  qwe:function(a,b){
     alert(a**b);
  },
@@ -64,5 +65,32 @@ const a ={
  },
  
 };
-console.log(a.qwe(2,4));
+consol*/
+/*
+const age = 96;
+function caluca(age0fsd){
+     age0fsd +2;
+     return "ji";
+}
+const ad =caluca(age);
+console.log(ad);*/
 
+const a ={
+    qwe: function(a,b){
+       return a + b;
+    },
+    qwe2: function(a,b){
+        return a-b ;
+    },
+    qwe3: function(a,b){
+        return a/b;
+    },
+    qwe4: function(a,b){
+        return a*b;
+    },
+    
+   };
+
+   const qw = a.qwe(2,3);
+   const qw2 = a.qwe2(2,3);
+   const qw3 = a.qwe3(10,9);

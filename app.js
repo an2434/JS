@@ -74,7 +74,7 @@ function caluca(age0fsd){
 }
 const ad =caluca(age);
 console.log(ad);*/
-
+/*
 const a ={
     qwe: function(a,b){
        return a + b;
@@ -93,4 +93,7 @@ const a ={
 
    const qw = a.qwe(2,3);
    const qw2 = a.qwe2(2,3);
-   const qw3 = a.qwe3(10,9);
+   const qw3 = a.qwe3(10,9);*/
+   //const name = prompt("너 누구야");
+const age =prompt("몇살");
+   console.log( age,parseInt(age));

@@ -136,8 +136,11 @@ else if (age>80);
 {
     console.log(
          
-    )
+
 }*/
 
-const title = document.getElementById("title")
-title.innerText = "got you";
+const title = document.getElementsByTagName("h1");
+//title.innerText = "got you";
+
+console.log(title);
+//console.log(title.className);  

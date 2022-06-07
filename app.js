@@ -151,6 +151,6 @@ const title = document.getElementById("something");
 title.innerText = "hi!";
 console.log(title.className);*/
 
-const sohing = document.getElementsByClassName("something");
+const title = document.getElementsByTagName("h1");
 
-console.log(sohing);
+console.log(title);

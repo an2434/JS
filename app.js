@@ -145,7 +145,12 @@ const title = document.querySelector(".hello h1");
 console.log(title);
 //console.log(title.className);  
 consol.log();z*/
+/*
 const title = document.getElementById("something");
 
 title.innerText = "hi!";
-console.log(title.className);
+console.log(title.className);*/
+
+const sohing = document.getElementsByClassName("something");
+
+console.log(sohing);

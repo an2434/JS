@@ -153,6 +153,11 @@ console.log(title.className);*/
 
 
 //const title = document.querySelector(".hello 1:first-child");
-const title = document.querySelector("#hello form");
+/*const title = document.querySelector("#hello form");
 const title1 = document.getElementById("hello");
-console.log(title,title1);
+console.log(title,title1);*/
+
+const title = document.querySelector(".hello h1");
+
+title.innerText = "Hello";
+console.log(title);

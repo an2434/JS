@@ -138,7 +138,7 @@ else if (age>80);
          
 
 }*/
-/*
+/*.
 const title = document.querySelector(".hello h1");
 //title.innerText = "got you";
 
@@ -151,6 +151,6 @@ const title = document.getElementById("something");
 title.innerText = "hi!";
 console.log(title.className);*/
 
-const title = document.getElementsByTagName("h1");
+const title = document.querySelector(".hello h1");
 
 console.log(title);

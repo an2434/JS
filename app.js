@@ -151,6 +151,6 @@ const title = document.getElementById("something");
 title.innerText = "hi!";
 console.log(title.className);*/
 
-const title = document.querySelector(".hello h1");
+const title = document.querySelector(".hello h1:first-child");
 
 console.log(title);

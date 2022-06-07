@@ -152,11 +152,19 @@ title.innerText = "hi!";
 console.log(title.className);*/
 
 
-const title = document.querySelector("div.hello:first-child h1");
+//const title = document.querySelector("div.hello:first-child h1");
 /*const title = document.querySelector("#hello form");
 const title1 = document.getElementById("hello");
 console.log(title,title1);*/
 
 //const title = document.querySelector(".hello h1");
 
-console.dir(title);
+//console.dir(title);
+//title.style.color =" blue";
+const title = document.querySelector("div.hello:first-child h1");
+
+function h(){
+    console.log("title was clicked!");
+
+}
+title.addEventListener("click", h);

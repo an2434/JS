@@ -138,10 +138,14 @@ else if (age>80);
          
 
 }*/
-
+/*
 const title = document.querySelector(".hello h1");
 //title.innerText = "got you";
 
 console.log(title);
 //console.log(title.className);  
-consol.log();
+consol.log();z*/
+const title = document.getElementById("something");
+
+title.innerText = "hi!";
+console.log(title.className);

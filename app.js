@@ -239,12 +239,27 @@ h1.addEventListener("click",handleTitleClick);
 //     }
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
+const HIDDEN_CLASSNAME = "hidden";
+//const link = document.querySelector("a");
 
 function onLoginSubmit(event){
    
     event.preventDefault();
-    console.log(loginInput.value);
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username =loginInput.value;
+    greeting.innerText = "hello " + username;
+    greeting.innerText = `hello ${username}`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 }
-loginForm.addEventListener("submit",onLoginSubmit);
+loginForm.addEventListener("submit", onLoginSubmit);
 
+// function handleLinkClick(){
+//     event.preventDefault();
+//     console.dir(event);
+//     alert ("clicked");
+// }
+
+//loginForm.addEventListener("submit",onLoginSubmit);
+//link.addEventListener("click",handleLinkClick);
 //onLoginSubmit()

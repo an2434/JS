@@ -200,7 +200,7 @@ window.addEventListener("resize",hj);//창크기를 바꾸면 작동
 window.addEventListener("copy",asd);//사용자가 복사를하면 작동
 window.addEventListener("offline",off);//오프라인이면 작동
 window.addEventListener("online",on);//온라인이면 작동*/
-
+/*
 const h1 = document.querySelector("div.hello:first-child h1");
 
 function handleTitleClick(){
@@ -212,6 +212,14 @@ function handleTitleClick(){
     else{
         h1.classList.add(clickedClass);
     }
+}
+
+h1.addEventListener("click",handleTitleClick);
+*/
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick(){
+  h1.classList.toggle("clicked")
 }
 
 h1.addEventListener("click",handleTitleClick);

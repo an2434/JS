@@ -164,7 +164,22 @@ console.log(title,title1);*/
 const title = document.querySelector("div.hello:first-child h1");
 
 function h(){
-    console.log("title was clicked!");
-
+    //console.log("title was clicked!");
+    title.style.color = "blue";
 }
+
+function a(){
+ 
+
+    title.innerText ="마우스는 여기있어!";
+}
+function b(){
+ 
+
+title.innerText="마우스는 여기없어!";
+}
+
+
 title.addEventListener("click", h);
+title.addEventListener("mouseenter",a);
+title.addEventListener("mouseleave",b);

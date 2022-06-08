@@ -26,8 +26,8 @@ toBuy.push("one");
 console.log(toBuy);
 */
 /*
-const player = { 
-    name : "nico", 
+const player = {
+    name : "nico",
     age: 98,
 };
 console.log(player);
@@ -63,7 +63,7 @@ minusFive(2,3,4,5,6);*/
  qwe4:function(a,b){
     alert(a+b);
  },
- 
+
 };
 consol*/
 /*
@@ -88,7 +88,7 @@ const a ={
     qwe4: function(a,b){
         return a*b;
     },
-    
+
    };
 
    const qw = a.qwe(2,3);
@@ -135,7 +135,7 @@ else if(age > 50 && age <= 80){
 else if (age>80);
 {
     console.log(
-         
+
 
 }*/
 /*.
@@ -143,7 +143,7 @@ const title = document.querySelector(".hello h1");
 //title.innerText = "got you";
 
 console.log(title);
-//console.log(title.className);  
+//console.log(title.className);
 consol.log();z*/
 /*
 const title = document.getElementById("something");
@@ -216,6 +216,7 @@ function handleTitleClick(){
 
 h1.addEventListener("click",handleTitleClick);
 */
+/*
 const h1 = document.querySelector("div.hello:first-child h1");
 
 function handleTitleClick(){
@@ -223,3 +224,23 @@ function handleTitleClick(){
 }
 
 h1.addEventListener("click",handleTitleClick);
+*/
+
+
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+
+function buttonclick(){
+    //console.log("hello",loginInput.value);
+    const username = loginInput.value
+    if(username === ""){
+alert("please write name");
+    }
+    else if(username.length>15){
+alert("15자 안으로 이름을 작성해주세요");
+    }
+    else{
+        console.log("hello",loginInput.value);
+    }
+}
+loginButton.addEventListener("click",buttonclick);

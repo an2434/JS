@@ -226,21 +226,25 @@ function handleTitleClick(){
 h1.addEventListener("click",handleTitleClick);
 */
 
+ //console.log("hello",loginInput.value);
 
+//     if(username === ""){
+// alert("please write name");
+//     }
+//     else if(username.length>15){
+// alert("15자 안으로 이름을 작성해주세요");
+//     }
+//     else{
+//         console.log("hello",loginInput.value);
+//     }
+const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-const loginButton = document.querySelector("#login-form button");
 
-function buttonclick(){
-    //console.log("hello",loginInput.value);
-    const username = loginInput.value
-    if(username === ""){
-alert("please write name");
-    }
-    else if(username.length>15){
-alert("15자 안으로 이름을 작성해주세요");
-    }
-    else{
-        console.log("hello",loginInput.value);
-    }
+function onLoginSubmit(event){
+   
+    event.preventDefault();
+    console.log(loginInput.value);
 }
-loginButton.addEventListener("click",buttonclick);
+loginForm.addEventListener("submit",onLoginSubmit);
+
+//onLoginSubmit()

@@ -161,25 +161,42 @@ console.log(title,title1);*/
 
 //console.dir(title);
 //title.style.color =" blue";
-const title = document.querySelector("div.hello:first-child h1");
+const h1 = document.querySelector("div.hello:first-child h1");
 
 function h(){
     //console.log("title was clicked!");
-    title.style.color = "blue";
+    h1.style.color = "blue";
 }
 
 function a(){
  
 
-    title.innerText ="마우스는 여기있어!";
+    h1.innerText ="마우스는 여기있어!";
 }
 function b(){
  
 
-title.innerText="마우스는 여기없어!";
+h1.innerText="마우스는 여기없어!";
 }
 
+function hj(){
+document.body.style.backgroundColor ="tomato";
+}
+function asd(){
+    alert("copier");
+}
+function off(){
+    alert("no wifi");
+}
+function on(){
+    alert("online");
+}
 
-title.addEventListener("click", h);
-title.addEventListener("mouseenter",a);
-title.addEventListener("mouseleave",b);
+h1.addEventListener("click", h);//클릭
+h1.addEventListener("mouseenter",a);//마우스를 올리면 작동
+h1.addEventListener("mouseleave",b);//마우스를 그 개체에서 때면 작동
+
+window.addEventListener("resize",hj);//창크기를 바꾸면 작동
+window.addEventListener("copy",asd);//사용자가 복사를하면 작동
+window.addEventListener("offline",off);//오프라인이면 작동
+window.addEventListener("online",on);//온라인이면 작동

@@ -161,13 +161,13 @@ console.log(title,title1);*/
 
 //console.dir(title);
 //title.style.color =" blue";
-const h1 = document.querySelector("div.hello:first-child h1");
+//const h1 = document.querySelector("div.hello:first-child h1");
 
-function h(){
+//function a(){
     //console.log("title was clicked!");
-    h1.style.color = "blue";
-}
-
+ //   h1.style.color = "blue";
+//}
+/*
 function a(){
  
 
@@ -199,4 +199,20 @@ h1.addEventListener("mouseleave",b);//마우스를 그 개체에서 때면 작�
 window.addEventListener("resize",hj);//창크기를 바꾸면 작동
 window.addEventListener("copy",asd);//사용자가 복사를하면 작동
 window.addEventListener("offline",off);//오프라인이면 작동
-window.addEventListener("online",on);//온라인이면 작동
+window.addEventListener("online",on);//온라인이면 작동*/
+
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function a(){
+    const currentColor = h1.style.color;
+    let newcolor;
+    if(h1.style.color === "blue"){
+     newcolor ="tomato";
+ }
+ else{
+     newcolor = "blue";
+ }
+ h1.style.color=newcolor;
+}
+
+h1.addEventListener("click",a);

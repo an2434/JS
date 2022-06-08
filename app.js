@@ -203,16 +203,15 @@ window.addEventListener("online",on);//온라인이면 작동*/
 
 const h1 = document.querySelector("div.hello:first-child h1");
 
-function a(){
-    const currentColor = h1.style.color;
-    let newcolor;
-    if(h1.style.color === "blue"){
-     newcolor ="tomato";
- }
- else{
-     newcolor = "blue";
- }
- h1.style.color=newcolor;
+function handleTitleClick(){
+    const clickedClass = "clicked";
+    if(h1.className === clickedClass)
+    {
+        h1.className = "";
+    }
+    else{
+        h1.className = clickedClass;
+    }
 }
 
-h1.addEventListener("click",a);
+h1.addEventListener("click",handleTitleClick);

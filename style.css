@@ -1,3 +1,11 @@
 body{
     background-color: beige;
 }
+
+h1{
+    color: rgb(82, 165, 237);
+    transition: color .5s ease-in-out;
+}
+.clicked {
+    color: tomato;
+}

@@ -240,21 +240,39 @@ h1.addEventListener("click",handleTitleClick);
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
-const HIDDEN_CLASSNAME = "hidden";
+const HIDDEN = "hidden";
+const USERNAME_KEY = "username"
 //const link = document.querySelector("a");
 
 function onLoginSubmit(event){
    
     event.preventDefault();
-    loginForm.classList.add(HIDDEN_CLASSNAME);
+    loginForm.classList.add(HIDDEN);
     const username =loginInput.value;
-    localStorage.setItem("username", username);
-    greeting.innerText = "hello " + username;
-    greeting.innerText = `hello ${username}`;
-    greeting.classList.remove(HIDDEN_CLASSNAME);
-}
-loginForm.addEventListener("submit", onLoginSubmit);
+    localStorage.setItem(USERNAME_KEY, username);
+    //greeting.innerText = "hello " + username;
+    // greeting.innerText = `hello ${username}`;
+    // greeting.classList.remove(HIDDEN);
+    paintGreeting(username);
 
+
+}
+function paintGreeting(username){
+    greeting.innerText = `Hello ${username}`
+    greeting.classList.remove(HIDDEN);
+
+
+}
+const saveusername = localStorage.getItem(USERNAME_KEY);
+
+if(saveusername===null){
+ loginForm.classList.remove(HIDDEN);
+ loginForm.addEventListener("submit", onLoginSubmit);
+
+}
+else{
+paintGreeting(saveusername);
+}
 // function handleLinkClick(){
 //     event.preventDefault();
 //     console.dir(event);

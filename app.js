@@ -253,14 +253,16 @@ function onLoginSubmit(event){
     //greeting.innerText = "hello " + username;
     // greeting.innerText = `hello ${username}`;
     // greeting.classList.remove(HIDDEN);
-    paintGreeting(username);
+    paintGreeting();
+   
 
 
 }
-function paintGreeting(username){
-    greeting.innerText = `Hello ${username}`
+function paintGreeting(){
+    const username2 = localStorage.getItem(USERNAME_KEY);
+    greeting.innerText = `Hello ${username2}`
     greeting.classList.remove(HIDDEN);
-
+   
 
 }
 const saveusername = localStorage.getItem(USERNAME_KEY);
@@ -271,7 +273,7 @@ if(saveusername===null){
 
 }
 else{
-paintGreeting(saveusername);
+paintGreeting();
 }
 // function handleLinkClick(){
 //     event.preventDefault();

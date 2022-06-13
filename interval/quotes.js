@@ -25,7 +25,7 @@ const quotes =[
         author: "- 헬렌켈러",
       },  {
         quote: '피할수 없으면 즐겨라',
-        author: "– 로버트 엘리엇"
+        author: "- 로버트 엘리엇"
       },  {
         quote: '먼저 자신을 비웃어라. 다른 사람이 당신을 비웃기 전에 ',
         author: "- 엘사 맥스웰",
@@ -35,7 +35,7 @@ const quotes =[
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
-const todayquotes = quotes[Math.floor(Math.random()* quotes.length)];
+const todayquotes = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todayquotes.quote;
 author.innerText = todayquotes.author;

@@ -25,7 +25,7 @@ function painttodo(newtodo) {
     button.addEventListener("click", deletetodo);
     li.appendChild(span);
     li.appendChild(button);
-    //console.log(li);
+    console.log(li); // 내일 수정
     todolist.appendChild(li);
 }
 
@@ -37,7 +37,7 @@ function todosubmit(event) {
     painttodo(newtodo);
     savetodo();
 
-    // console.log(todoinput.value);
+    console.log(todoinput.value);// 내일 수정
 }
 
 todoform.addEventListener("submit", todosubmit);

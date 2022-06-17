@@ -2,7 +2,7 @@ const todoform = document.getElementById("todo-form");
 const todoinput = document.querySelector("#todo-form input")
 const todolist = document.getElementById("todo-list");
 
-const todos = [];
+let todos = [];
 
 const TODOS_KEY = "todos";
 
@@ -48,8 +48,15 @@ const savetodos = localStorage.getItem(TODOS_KEY);
 //console.log(savetodos);
 if (savetodos !== null) {
     const parsedtodos = JSON.parse(savetodos);
-    parsedtodos.forEach((item) => console.log("dasd", item));
+    todos = parsedtodos;
+    parsedtodos.forEach(painttodo);
 }
+(item) => console.log("this is the trun of", item);
+
+function sayHello(item){
+
+}
+
 
 // const toDoForm = document.getElementById("todo-form");
 // const toDoInput = document.querySelector("#todo-form input");

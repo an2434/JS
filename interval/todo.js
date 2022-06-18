@@ -25,7 +25,7 @@ function painttodo(newtodo) {
     button.addEventListener("click", deletetodo);
     li.appendChild(span);
     li.appendChild(button);
-    console.log(li); // 내일 수정
+   // console.log(li);
     todolist.appendChild(li);
 }
 
@@ -33,11 +33,16 @@ function todosubmit(event) {
     event.preventDefault();
     const newtodo = todoinput.value;
     todoinput.value = "";
-    todos.push(newtodo);
+    const newtodoobj = {
+         text: newtodoobj,
+         id: Date.now(),
+    };
+    todos.push(newtodoobj);
     painttodo(newtodo);
-    savetodo();
+    savetodos();
 
-    console.log(todoinput.value);// 내일 수정
+
+  //  console.log(todoinput.value);
 }
 
 todoform.addEventListener("submit", todosubmit);

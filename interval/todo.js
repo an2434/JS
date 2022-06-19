@@ -42,7 +42,7 @@ function todosubmit(event) {
     savetodos();
 
 
-  //  console.log(todoinput.value);
+   console.log(todoinput.value);
 }
 
 todoform.addEventListener("submit", todosubmit);

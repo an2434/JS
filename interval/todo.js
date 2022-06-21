@@ -13,13 +13,15 @@ function savetodo() {
 
 function deletetodo(event) {
     const li = event.target.parentElement;
+    console.log(li.id);
     li.remove();
 }
 
 function painttodo(newtodo) {
     const li = document.createElement("li");
+    li.id = newtodo.id;
     const span = document.createElement("span");
-    span.innerText = newtodo;
+    span.innerText = newtodo.text;
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click", deletetodo);
@@ -34,15 +36,15 @@ function todosubmit(event) {
     const newtodo = todoinput.value;
     todoinput.value = "";
     const newtodoobj = {
-         text: newtodoobj,
+         text: newtodo,
          id: Date.now(),
     };
     todos.push(newtodoobj);
-    painttodo(newtodo);
-    savetodos();
+    painttodo(newtodoobj);
+    savetodo();
 
 
-   console.log(todoinput.value);
+  // console.log(todoinput.value);
 }
 
 todoform.addEventListener("submit", todosubmit);
